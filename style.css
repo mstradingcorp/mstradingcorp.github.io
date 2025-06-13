@@ -10,8 +10,8 @@ body {
     background-color: red;
     color: white;
     font-weight: bold;
-    padding: 20px 10px;
-    font-size: 3rem;
+    padding: 10px 5px;
+    font-size: 2rem;
     text-align: center;
     font-family: Helvetica;
     /* position: relative; */
@@ -38,6 +38,10 @@ header {
   align-items: center;
   padding: 1rem;
   font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 nav a {
   color: white;
