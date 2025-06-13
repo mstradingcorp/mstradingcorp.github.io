@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clothing Store</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="banner">
+    <span id="rotatingText" class="rotating-text">Welcome to our store!</span>
+  </div>
+
+  <header>
+    <div class="logo-title">MS Micro Clothing Store</div>
+    <nav>
+      <a id="homeLink" href="#" onclick="showHome()">Home</a>
+      <a id="listLink" href="#" onclick="showWishlist()">Wishlist</a>
+    </nav>
+  </header>
+
+  <div class="container" id="content"></div>
+
+  <div class="modalBackdrop" id="modalBackdrop" onclick="closeModal()">
+    <div class="modal" id="itemModal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img id="modalImg" src="" alt="" style="width: 100%;" />
+        <h3 id="modalName"></h3>
+        <p><strong>Model:</strong> <span id="modalModel"></span></p>
+        <p id="modalDesc"></p>
+        <button onclick="saveToWishlist(currentItem)">❤️ Save to Wishlist</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./items.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
