@@ -14,7 +14,10 @@ body {
     font-size: 3rem;
     text-align: center;
     font-family: Helvetica;
-    position: relative;
+    /* position: relative; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,4 +98,9 @@ nav a {
   right: 1rem;
   cursor: pointer;
   font-size: 1.2rem;
+}
+input {
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 4px;
 }
