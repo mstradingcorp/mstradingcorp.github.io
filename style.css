@@ -84,7 +84,8 @@ nav a {
   background: rgba(0, 0, 0, 0.6);
   /* display: none; */
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  /* overflow-y: scroll; */
 }
 .modalBackdrop {
     display: none;

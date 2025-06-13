@@ -38,13 +38,14 @@ function filterItems(query) {
 }
 
 function viewItem(item) {
-    currentItem = item;
-    document.getElementById("modalImg").src = "./images/inventory/" + item.model + ".jpg";
-    document.getElementById("modalName").textContent = item.name;
-    document.getElementById("modalModel").textContent = "UFG-" + item.model;
-    document.getElementById("modalDesc").textContent = item.desc;
-    document.getElementById("itemModal").style.display = "flex";
-    document.getElementById("modalBackdrop").style.display = "block";
+  document.getElementsByClassName("banner")[0].style.display = "none";
+  currentItem = item;
+  document.getElementById("modalImg").src = "./images/inventory/" + item.model + ".jpg";
+  document.getElementById("modalName").textContent = item.name;
+  document.getElementById("modalModel").textContent = "UFG-" + item.model;
+  document.getElementById("modalDesc").textContent = item.desc;
+  document.getElementById("itemModal").style.display = "flex";
+  document.getElementById("modalBackdrop").style.display = "block";
 
 }
 
@@ -67,6 +68,7 @@ function openDB() {
 
 function closeModal() {
     document.getElementById("itemModal").style.display = "none";
+    document.getElementsByClassName("banner")[0].style.display = "flex";
 }
 
 async function saveToWishlist(item) {
